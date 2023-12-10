@@ -36,6 +36,10 @@ function CourseRoutes(app) {
         const courses = Database.courses;
         res.send(courses);
     });
+    app.get("/api/quizzes", (req, res) => {
+        const courses = Database.courses;
+        res.send(courses);
+    });
 
 }
 export default CourseRoutes;
